@@ -33,6 +33,7 @@ def process_frame(frame, model):
 
 def main():
     st.title("Fire Detection using YOLO")
+    st.subheader("For CMU Computer Vision Course")
     
     uploaded_file = st.file_uploader("Upload a video", type=["mp4", "mov", "avi"])
     

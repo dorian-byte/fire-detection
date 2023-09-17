@@ -74,6 +74,9 @@ This application uses the Ultralytics YOLO model to detect fire in uploaded vide
 2. **Video Processing**: Each frame of the uploaded video is processed using the pretrained YOLO model to detect fire.
 3. **Results Display**: The application provides feedback based on the detection results.
 
+## Demo
+
+![Demo]('./videos/demo.gif')
 ## Code Overview
 
 - `fire_detected(result)`: This function checks if fire is detected in the given result.
