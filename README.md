@@ -2,16 +2,14 @@
 
 This project uses the YOLO (You Only Look Once) architecture from Ultralytics to detect fires in video streams. The detections are displayed in real-time and can optionally be saved to a text file or an annotated video.
 
-## Dependencies:
+## Requirements:
 
-- `supervision`
-- `ultralytics`
-- `numpy`
-- `datetime`
-- `time`
-- `cv2`
-- `os`
-- `argparse`
+- Python version: 3.10.2
+- To install the necessary packages, run: 
+
+```
+pip install -r requirements.txt
+```
 
 ## Usage:
 
