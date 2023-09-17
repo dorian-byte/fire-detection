@@ -76,7 +76,7 @@ This application uses the Ultralytics YOLO model to detect fire in uploaded vide
 
 ## Demo
 
-![Demo]('./videos/demo.gif')
+![Demo](./videos/demo.gif)
 ## Code Overview
 
 - `fire_detected(result)`: This function checks if fire is detected in the given result.
