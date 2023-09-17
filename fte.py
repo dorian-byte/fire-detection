@@ -35,8 +35,6 @@ def main():
     st.title("Fire Detection using YOLO")
     
     uploaded_file = st.file_uploader("Upload a video", type=["mp4", "mov", "avi"])
-    save_txt = st.checkbox("Save detections to a txt file")
-    save_res = st.checkbox("Save video results with annotations")
     
     rets = []
     if uploaded_file is not None:
