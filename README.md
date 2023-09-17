@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ### Basic Command:
 
 
-```
+```bash
 python detect_fire.py
 ```
 
@@ -31,7 +31,7 @@ This command will start the fire detection on the default camera source (usually
 
 Example:
 
-```
+```bash
 python detect_fire.py --save_txt --save_res
 ```
 
@@ -57,3 +57,33 @@ Feel free to raise issues or submit pull requests. Your contributions are always
 
 
 
+
+# FRONTEND APP: Fire Detection using YOLO
+
+This application uses the Ultralytics YOLO model to detect fire in uploaded videos. 
+
+## Features
+
+- **Upload Video**: Users can upload videos in formats like `.mp4`, `.mov`, and `.avi`.
+- **Fire Detection**: The application processes the video and uses the YOLO model to check for fire occurrences.
+- **Results**: After processing, the application provides feedback on whether a fire was detected in the uploaded video.
+
+## How it Works
+
+1. **Video Upload**: A user uploads a video via the Streamlit interface.
+2. **Video Processing**: Each frame of the uploaded video is processed using the pretrained YOLO model to detect fire.
+3. **Results Display**: The application provides feedback based on the detection results.
+
+## Code Overview
+
+- `fire_detected(result)`: This function checks if fire is detected in the given result.
+- `process_frame(frame, model)`: Processes each frame of the video to detect fire.
+- `main()`: Main function that manages the Streamlit interface and video processing.
+
+## Usage
+
+To run the application:
+
+```bash
+streamlit run fte.py
+```
